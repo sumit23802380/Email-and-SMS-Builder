@@ -1,0 +1,22 @@
+<%- include('includes/head.ejs') %>
+    <div class="row justify-content-center">
+        <form action="/create-group" method="POST" >
+            <div class="form-group">
+              <label>Name of Group</label>
+              <input type="text" class="form-control" name="title" placeholder="Enter the name of new group">
+            </div>
+            <div class="form-group">
+              <label>Name of DataBase Using</label>
+              <select class="form-control" >
+                <option>SQL</option>
+                <option>No SQL</option>
+             </select>
+            </div>
+            <div class="form-group">
+              <label>Description of Group</label>
+              <textarea class="form-control" name="description"  rows="3"></textarea>
+            </div>
+            <button class="btn btn-black" type="submit" >Add Group</button>
+        </form>
+    </div>
+<%- include('includes/end.ejs') %>

@@ -1,0 +1,19 @@
+<%- include('../includes/head.ejs') %>
+    <div class="row justify-content-center">
+      <% if (groups.length > 0) { %>
+            <% for (let group of groups) { %>
+              <div class="card space" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title"><%= group.title %></h5>
+                  <p class="card-text"><%= group.description %></p>
+                  <a href="/<%= group._id%>" class="card-link">Details</a>
+                  <a href="#" class="card-link">Edit Group</a>
+                </div>
+              </div>
+            <% } %>
+        </div>
+    <% } else { %>
+        <h1>No Groups Found!</h1>
+    <% } %>
+    </div>
+<%- include('../includes/end.ejs') %>

@@ -1,0 +1,27 @@
+{
+  "name": "sender",
+  "version": "1.0.0",
+  "description": "App use to Send text SMS and Emails ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Application",
+    "use",
+    "to",
+    "send",
+    "text",
+    "sms",
+    "and",
+    "emails"
+  ],
+  "author": "Sumit Jangid",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongodb": "^4.6.0"
+  }
+}
